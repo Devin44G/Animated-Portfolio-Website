@@ -1,0 +1,113 @@
+<!--
+I understand that, normally, the main HTML file is saved as index.html, but (being that
+I have only one HTML file in this folder) I went ahead and left it as Portfolio.html ...
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="Portfolio.css" rel="stylesheet" type="text/css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+
+<body>
+<!-- Navbar Begin -->
+  <nav id="navbar">
+    <ul id="nav-list">
+      <li><a href="#welcome-section"> About Me </a></li>
+      <li><a href="#projects"> Current Projects </a></li>
+      <li><a href="#contact"> Contact </a></li>
+    </ul>
+  </nav>
+<!-- Navbar End -->
+
+<!-- Welcome Section Begin -->
+  <section class="welcome-section" id="welcome-section">
+    <canvas></canvas>
+    <script src="canvas.js"></script> <!-- Importing JavaScript from canvas.js file -->
+    <h1 id="welcome-text-1"> Hi, I'm Devin </h1>
+    <p id="welcome-text-2"> <strong>I code stuff</strong> </p>
+  </section>
+<!-- Welcome Section End -->
+
+<!-- Projects Section Begin -->
+  <section id="projects">
+    <h1> My Projects </h1>
+
+    <div id="project-list"> <!-- Setting up <div> to wrap list of projects in -->
+      <a
+        target="_blank"
+        href="https://codepen.io/devin44g/pen/QXYXxz"
+        class="project-tile"
+      >
+      <img
+        id="project-image"
+        src="Tribute.jpg"
+        alt="Tribute Page Project"
+      />
+      <p id="project-title">
+        Tribute Page
+      </p>
+      </a>
+
+      <a
+        target="_blank"
+        href="https://codepen.io/devin44g/pen/Xvpmgp"
+        class="project-tile"
+      >
+      <img
+        id="project-image"
+        src="Survey.jpg"
+        alt="Survey Form Project"
+      />
+      <p id="project-title">
+        Survey Form
+      </p>
+      </a>
+    </div>
+  </section>
+<!-- Project Section End -->
+
+<!-- Contact Section Begin -->
+  <section id="contact">
+    <h1> Contact </h1>
+
+    <div id="contact-list">
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://codepen.io/devin44g">
+            <i class="fab fa-codepen"></i> CodePen
+          </a>
+        </li>
+
+        <li>
+          <a
+            id="profile-link"
+            target="_blank"
+            href="https://github.com/Devin44G?tab=repositories">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:thefictionist.44@gmail.com">
+            <i class="fas fa-at"></i> Email
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- Contact Section End -->
+
+<footer> &copy Devin Graham </footer>
+
+</body>
+</html>
